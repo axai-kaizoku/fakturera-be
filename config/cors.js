@@ -1,4 +1,7 @@
-const allowedOrigins = "https://fakturera-leuh.onrender.com";
+import "dotenv/config";
+
+const allowedOrigins = process.env.FRONTEND_URL;
+// const allowedOrigins = "*";
 
 export const corsOptions = {
   origin: allowedOrigins,
